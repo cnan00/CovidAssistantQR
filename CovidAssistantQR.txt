@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- HTML Codes by Quackit.com -->
+<title>
+ Apple Assistant download page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
+p {font-family:Arial, sans-serif;font-size:16px;font-style:normal;font-weight:bold;color:#444444;background-color:#ffffff;}
+</style>
+</head>
+<body>
+<h1> Apple Assistant</h1>
+<p>Press the button below to download the latest version of  Apple Assistant</p>
+<a href="https://www.icloud.com/shortcuts/a5adbcdb30d74cc4bd5644faa8588536" download>Download  Covid Assistant</a>
+</body>
+</html>
