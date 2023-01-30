@@ -81,18 +81,23 @@
   Created for Mall of America Apple employee use only.
   </p>
     <form>
-    <script>
-      if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
-        // user is on iOS, redirect to download
-        document.write('<input type="button" value="Download Shortcut" class="button" onclick="window.location.href=\'https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51\'" />');
-      } else {
-        // user is not on iOS, show QR code
-        document.write('<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51" /><br><br>');
+  <script>
+    if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+      // user is on iOS, redirect to download
+      document.write('<input type="button" value="Download Shortcut" class="button" onclick="window.location.href=\'https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51\'" />');
+    } else {
+      // user is not on iOS, show QR code
+      document.write('<input type="button" value="Show QR Code" class="button" onclick="showQR()" />');
 
-        document.write('<p style="font-size: 18px; font-weight: bold;">It looks like you\'re not on a mobile device. Scan this QR code on your mobile device to download this Shortcut!</p>');
-      }
-    </script>
-  </form>
+      document.write('<p id="qr-code" style="display: none;"><br><img src="https://github.com/cnan00/CovidAssistantQR/raw/main/QR2.png" /></p>');
+    }
+
+    function showQR() {
+      document.getElementById("qr-code").style.display = "block";
+    }
+  </script>
+</form>
+
 
   </body>
   </html>
