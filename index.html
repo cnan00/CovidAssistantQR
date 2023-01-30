@@ -78,15 +78,6 @@ p strong {
   <h1> Assistant</h1>
   <p id="version-text"></p> <!-- Add a new <p> tag with an id -->
   <div id="verNumber"style="color: white;"></div>
-  <script>
-    const redirectButton = document.querySelector('#redirect-button');
-
-  redirectButton.addEventListener('click', async () => {
-    const response = await fetch('https://github.com/cnan00/AppleAssistant/raw/main/AppleAssistantCurrentURL');
-    const currentURL = await response.text();
-
-    window.location.href = currentURL;
-  </script>
   <p><strong>Press the button below to download the latest version of  Assistant shortcut.</strong></p>
   <p>
     Created for Mall of America Apple employee use only.
@@ -98,7 +89,11 @@ p strong {
       document.write('<input type="button" value="Download Shortcut" class="button" onclick="window.location.href=\'https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51\'" />');
     } else {
       // user is not on iOS, show QR code
-      document.write('<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cnan00.github.io/CovidAssistantQR/" /><br><br>');
+      document.write('<img src="
+                     
+                     https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cnan00.github.io/CovidAssistantQR/
+                     
+                     " /><br><br>');
       
       document.write('<p style="font-size: 18px; font-weight: bold;">It looks like you\'re not on a mobile device. Scan this QR code on your mobile device to download this Shortcut!</p>');
     }
