@@ -1,30 +1,64 @@
 <!DOCTYPE html>
- <html>
- <head>
-
- <title>
-  Assistant download page</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <style>
- body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
- h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
- p {font-family:Arial, sans-serif;font-size:16px;font-style:normal;font-weight:bold;color:#444444;background-color:#ffffff;}
- </style>
- </head>
- <body>
- <h1> Assistant</h1>
-
-  <!-- Edit Version Below -->
+<html>
+<head>
+  <title> Assistant Download Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-attachment: fixed;
+      padding: 15px;
+    }
+    h1{
+      font-family:Arial, sans-serif;
+      text-align: center;
+      font-size: 1.25rem;
+      color: #444;
+      background-color: #f1f1f1;
+      padding: 25px 0;
+      margin: 0;
+    }
+    p {
+      font-family:Arial, sans-serif;
+      font-size: 1.15em;
+      line-height: 1.5;
+      color:#444444; 
+      margin-bottom: 1rem;
+    }
+    form {
+      text-align: center;
+    }
+    .button {
+      background-color: #f1f1f1;
+      color: #444; 
+      border: none;
+      padding: 10px 30px;
+      font-size: 1.15em;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+    .button:hover {
+      cursor: pointer;
+      background-color: #666;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1> Assistant</h1>
   <p>Version 2.3 </p>
 
- <p>Press the button below to download the latest version of  Assistant shortcut</p>
-  <p> Created for Mall of America Apple employee use only.</p>
+  <p>
+    Press the button below to download the latest version of  Assistant shortcut. Created for Mall of America Apple employee use only.
+  </p>
   <form>
-
-   <!-- Edit URL Below -->
- <input type="submit" value="Download Shortcut" onclick="window.location.href='https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51'" />
-
- </form>
-
- </body>
- </html>
+    <input type="button” value="Download Shortcut" class="button" onclick="window.location.href='https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51'" />
+  </form>
+</body>
+</html>
