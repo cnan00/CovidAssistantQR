@@ -69,17 +69,28 @@ p strong {
   color: #000;
   text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
+
   </style>
 </head>
 <body>
   
   <img src="https://github.com/cnan00/CovidAssistantQR/raw/main/IMG_2747.png" style="display: inline-block; height: auto; max-width: 100%;">
   <h1> Assistant</h1>
-  <p>Version 2.3</p>
+  <p id="version-text"></p> <!-- Add a new <p> tag with an id -->
+  <div id="verNumber"style="color: white;"></div>
+  <script>
+    const redirectButton = document.querySelector('#redirect-button');
+
+  redirectButton.addEventListener('click', async () => {
+    const response = await fetch('https://github.com/cnan00/AppleAssistant/raw/main/AppleAssistantCurrentURL');
+    const currentURL = await response.text();
+
+    window.location.href = currentURL;
+  </script>
   <p><strong>Press the button below to download the latest version of  Assistant shortcut.</strong></p>
-<p>
-Created for Mall of America Apple employee use only.
-</p>
+  <p>
+    Created for Mall of America Apple employee use only.
+  </p>
   <form>
   <script>
     if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
