@@ -6,103 +6,93 @@
   <style>
     * {
       font-family: sans-serif;
-      box-sizing: border-box;
-    }
-    body {
-      background: linear-gradient(to bottom, #2196f3, #9c27b0);
-      background-repeat: no-repeat;
-      background-position: top left;
-      background-attachment: fixed;
-      padding: 15px;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
- 
-    h1{
-  font-family:Arial, sans-serif;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1.75rem;
-  color: #fff;
-  
-  padding: 25px 0;
-  margin: 0;
-}
-p {
-  font-family:Arial, sans-serif;
-  font-size: 0.8em; /* decrease font size */
-  line-height: 1.5;
-  color: #fff;
-  margin-bottom: 1rem;
-  position: relative; /* added */
-  top: -1.2rem; /* moved up */
-}
-p strong {
-  font-size: 1.5em;
-  font-weight: extrabold;
-  text-align: center;
-  display: block;
-  margin: 1rem auto;
-}
-    form {
-      text-align: center;
-    }
-    .button {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 30px;
-  font-size: 1.15em;
-  font-weight: 500;
-  transition: 0.3s ease;
-  border-radius: 30px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-.button:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #000;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
+       box-sizing: border-box;
+     }
+     body {
+       background: linear-gradient(to bottom, #2196f3, #9c27b0);
+       background-repeat: no-repeat;
+       background-position: top left;
+       background-attachment: fixed;
+       padding: 15px;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
 
-  </style>
-</head>
-<body>
-  
-  <img src="https://github.com/cnan00/CovidAssistantQR/raw/main/IMG_2747.png" style="display: inline-block; height: auto; max-width: 100%;">
-  <h1> Assistant</h1>
-  <p>
-    
-    Version 2.3
-    
-  </p>
-    
-  <p><strong>Press the button below to download the latest version of  Assistant shortcut.</strong></p>
-  <p>
-    Created for Mall of America Apple employee use only.
-  </p>
-  <form>
-  <script>
-    if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
-      // user is on iOS, redirect to download
-      document.write('<input type="button" value="Download Shortcut" class="button" onclick="window.location.href=\'https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51\'" />');
-    } else {
-      // user is not on iOS, show QR code
-      document.write('<img src="
-                     
-                     https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cnan00.github.io/CovidAssistantQR/
-                     
-                     " /><br><br>');
-      
-      document.write('<p style="font-size: 18px; font-weight: bold;">It looks like you\'re not on a mobile device. Scan this QR code on your mobile device to download this Shortcut!</p>');
-    }
-  </script>
-</form>
 
-</body>
-</html>
+     h1{
+   font-family:Arial, sans-serif;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 1.75rem;
+   color: #fff;
+
+   padding: 25px 0;
+   margin: 0;
+ }
+ p {
+   font-family:Arial, sans-serif;
+   font-size: 0.8em; /* decrease font size */
+   line-height: 1.5;
+   color: #fff;
+   margin-bottom: 1rem;
+   position: relative; /* added */
+   top: -1.2rem; /* moved up */
+ }
+ p strong {
+   font-size: 1.5em;
+   font-weight: extrabold;
+   text-align: center;
+   display: block;
+   margin: 1rem auto;
+ }
+     form {
+       text-align: center;
+     }
+     .button {
+   background: rgba(255, 255, 255, 0.1);
+   color: #fff;
+   border: 2px solid #fff;
+   padding: 10px 30px;
+   font-size: 1.15em;
+   font-weight: 500;
+   transition: 0.3s ease;
+   border-radius: 30px;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+ }
+ .button:hover {
+   cursor: pointer;
+   background-color: #fff;
+   color: #000;
+   text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+ }
+   </style>
+ </head>
+ <body>
+
+   <img src="https://github.com/cnan00/CovidAssistantQR/raw/main/IMG_2747.png" style="display: inline-block; height: auto; max-width: 100%;">
+   <h1> Assistant</h1>
+   <p>Version 2.3</p>
+   <p><strong>Press the button below to download the latest version of  Assistant shortcut.</strong></p>
+ <p>
+ Created for Mall of America Apple employee use only.
+ </p>
+   <form>
+   <script>
+     if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+       // user is on iOS, redirect to download
+       document.write('<input type="button" value="Download Shortcut" class="button" onclick="window.location.href=\'https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51\'" />');
+     } else {
+       // user is not on iOS, show QR code
+       document.write('<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.icloud.com/shortcuts/37c0367375fb49a5b399979a994d9b51" /><br><br>');
+
+       document.write('<p style="font-size: 18px; font-weight: bold;">It looks like you\'re not on a mobile device. Scan this QR code on your mobile device to download this Shortcut!</p>');
+     }
+   </script>
+ </form>
+
+ </body>
+ </html>
