@@ -69,7 +69,31 @@
     </style>
   </head>
   <body>
-    <img src="https://github.com/cnan00/CovidAssistantQR/raw/main/IMG_2747.png" style="display: inline-block; height: auto; max-width: 100%;">
+    <img id="img" src="https://github.com/cnan00/CovidAssistantQR/raw/main/IMG_2747.png" style="display: inline-block; height: auto; max-width: 100%; transition: 0.3s ease-in-out transform;">
+<script>
+  const img = document.querySelector("#img");
+  img.addEventListener("click", () => {
+    img.style.transform = "rotateY(180deg)";
+    const p = document.createElement("p");
+    p.classList.add("text-on-img");
+    p.innerHTML = "Created by Canaan Gonzalez Apple Mall of America";
+    document.body.appendChild(p);
+  });
+</script>
+
+<style>
+  .text-on-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    color: white;
+    font-size: .7em;
+    text-align: center;
+
+    padding: 1rem;
+  }
+  </style>
     <h1> Assistant</h1>
     <p>Version 2.3</p>
     <p><strong>Press the button below to download the latest version of  Assistant shortcut.</strong></p>
